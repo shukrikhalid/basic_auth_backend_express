@@ -1,0 +1,12 @@
+
+apps:
+  - name      : 'Server-basic_auth'
+    script    : ./server.js
+    instances : 2
+    exec_mode : cluster
+    watch     : true
+    ignore_watch: ["node_modules", "log"]
+    error_file: "log/err.log"
+    out_file  : "/dev/null"
+    merge_logs: true
+    log_date_format: "YYYY-MM-DD HH:mm Z"

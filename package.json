@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --config nodemon.json",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pm2_start": "node_modules/pm2/bin/pm2 start pm2.yaml",
+    "pm2_stop": "node_modules/pm2/bin/pm2 stop pm2.yaml",
+    "pm2_monit": "node_modules/pm2/bin/pm2 monit pm2.yaml",
+    "pm2_log": "node_modules/pm2/bin/pm2 log pm2.yaml"
   },
   "author": "shukri khalid",
   "license": "ISC",
@@ -21,6 +25,7 @@
     "mongoose": "^5.11.14",
     "mysql2": "^2.2.5",
     "path": "^0.12.7",
+    "pm2": "^4.5.4",
     "randomstring": "^1.1.5",
     "sequelize": "^6.5.0"
   },
