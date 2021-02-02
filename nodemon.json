@@ -1,0 +1,12 @@
+{
+  "watch": [
+    "server.js",
+    "routes.js",
+    "controllers/*.js",
+    "db/mongodb/models/*.js",
+    "db/mysql/models/*.js",
+    "jobs/*.js",
+    "services/*.js"
+  ],
+  "exec": "node server.js"
+}
