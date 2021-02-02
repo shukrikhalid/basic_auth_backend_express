@@ -19,14 +19,19 @@ ACCESS_TOKEN_SECRET=1615b2e116e991095...
 REFRESH_TOKEN_SECRET=6b8169c22668ff539...
 ```
 
-2. DB used MySQL with [Sequelize ORM](https://sequelize.org/)
+2. Install pakage dependency
+```sh
+yarn install
+```
+
+3. DB used MySQL with [Sequelize ORM](https://sequelize.org/)
 Just do this command
 ```sh
 npx sequelize db:create 
 npx sequelize db:migrate
 ```
 
-3. To run local
+4. To run local
 ```sh
 $ yarn start
 ```
